@@ -107,6 +107,8 @@ ul {
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
     
 
 }
@@ -171,6 +173,9 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+    
     
 
 }
@@ -450,7 +455,9 @@ ul {
     text-decoration: none;
     border-radius: 50%;
     width: 44px;
-    height: 44px;  
+    height: 44px; 
+    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)  
 }
 
 .chain-list .link:hover, 
@@ -463,6 +470,7 @@ ul {
     width: 20px;
     height: 20px;
     fill: currentColor;
+
    
 }
 
@@ -530,6 +538,8 @@ ul {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     background-color: var(--second-title-color);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
     
     
 }
@@ -656,6 +666,8 @@ ul {
     color: var(--second-title-color);
     text-decoration: none;
     background-color: var(--primary-text-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 
     
 
 }
@@ -734,6 +746,8 @@ ul {
     border: 1px solid #F5F4FA;
 
     border-radius: 4px;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
     
    }
 
@@ -844,11 +858,13 @@ ul {
     text-decoration: none;
 }
 
-/*.card-list .link:hover, .card-list .link:focus {
-    color: var(--second-title-color);
+.card-list .link:hover, .card-list .link:focus {
+     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+
+    /*color: var(--second-title-color);
     background-color: var(--accent-color);
-    opacity: 1;
-}*/
+    opacity: 1;*/
+}
 
 .item .link:hover .position-text, .item .link:focus .position-text {
     color: var(--second-title-color);
@@ -884,3 +900,4 @@ ul {
    padding-left:24px;
    padding-right: 24px;
 }
+
