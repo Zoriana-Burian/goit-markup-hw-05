@@ -719,6 +719,11 @@ ul {
 
 /*Button-portfolio*/
 
+.section-portfolio {
+    padding-top: 73px;
+    padding-bottom: 94px;
+}
+
 .portfolio-list {
     display: flex;
     justify-content: center;
@@ -761,7 +766,7 @@ ul {
 
 .section-portfolio .title {
     color: var(--second-title-color);
-
+    margin-top: 0;
     margin-bottom: 0;
     
 }
