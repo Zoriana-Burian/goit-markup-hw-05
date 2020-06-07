@@ -755,6 +755,7 @@ ul {
 .portfolio-list .type:focus {
     color: var(--second-title-color);
     background-color: var(--accent-color);
+
 } 
 
 
@@ -796,37 +797,41 @@ ul {
 
 }
 
-.position-card::before {
-    display: inline-block;
+.text-second {
+    color: var(--second-title-color);
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
     position: absolute;
-    content: "";
+   
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
+
+    padding: 63px 24px;
+    
     background-color: rgba(33, 150, 243, 0.9);
 
     transform: translateY(100%);
+  
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
-.item .link:hover .position-card:before {
-    opacity: 1;
+
+.item .link:hover .text-second, .item .link:focus .text-second {
+
     transform: translateY(0%);
-}
-
-
-.position-text {
-    position: absolute;
-    top: -40%;
-    left: 10%;
-    opacity: 0;
-
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    
+    opacity: 1;
 
 }
+
 
 .card-list .title {
     color: var(--title-text-color);
@@ -861,32 +866,8 @@ ul {
 .card-list .link:hover, .card-list .link:focus {
      box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 
-    /*color: var(--second-title-color);
-    background-color: var(--accent-color);
-    opacity: 1;*/
 }
 
-.item .link:hover .position-text, .item .link:focus .position-text {
-    color: var(--second-title-color);
-    /*background-color: var(--accent-color);*/
-
-    opacity: 1;
-    
-
-}
-
-.card-list .text-second {
-    color: var(--second-title-color);
-
-    margin-top: 0;
-    margin-bottom: 0;
-
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    
-}
 
 .card-content {
     width: 370px;
